@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScriptForge AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="phone">
+    <header>
+      <div>
+        <span class="badge">AI SCRIPT STUDIO</span>
+        <h1>ScriptForge</h1>
+        <p>Turn an idea into a ready-to-film script.</p>
+      </div>
+      <div class="spark">✦</div>
+    </header>
+
+    <section class="card">
+      <label>What's your video about?</label>
+      <textarea id="topic" placeholder="e.g. A teenager discovers a mysterious phone that receives calls from the future..."></textarea>
+
+      <div class="grid">
+        <div>
+          <label>Genre</label>
+          <select id="genre">
+            <option>Drama</option><option>Action</option><option>Comedy</option>
+            <option>Mystery</option><option>Fantasy</option><option>Horror</option>
+            <option>Educational</option>
+          </select>
+        </div>
+        <div>
+          <label>Platform</label>
+          <select id="platform">
+            <option>TikTok</option><option>YouTube Shorts</option><option>YouTube</option>
+          </select>
+        </div>
+        <div>
+          <label>Duration</label>
+          <select id="duration">
+            <option>30 seconds</option><option selected>60 seconds</option>
+            <option>90 seconds</option><option>3 minutes</option><option>5 minutes</option>
+          </select>
+        </div>
+        <div>
+          <label>Style</label>
+          <select id="style">
+            <option>Cinematic</option><option>Fast-paced</option>
+            <option>Emotional</option><option>Funny</option>
+            <option>Dark and mysterious</option><option>Educational</option>
+          </select>
+        </div>
+      </div>
+
+      <label>Characters <span class="optional">optional</span></label>
+      <input id="characters" placeholder="e.g. Tunde, 16, curious Nigerian student" />
+
+      <button id="generate">✦ Generate Script</button>
+      <p id="status" class="status"></p>
+    </section>
+
+    <section class="output card">
+      <div class="output-head">
+        <h2>Your Script</h2>
+        <button id="copy" class="copy">Copy</button>
+      </div>
+      <pre id="result">Your generated script will appear here.</pre>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
